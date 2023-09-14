@@ -1,6 +1,8 @@
 package ToyShop.VendingMachine;
 
-public interface Behavior<E> {
-    void putToMachine(E toy);
-    E getToy();
+import ToyShop.Toys.Toy;
+
+public interface Behavior {
+    void putToMachine(Toy toy);
+    public Toy getToy();
 }

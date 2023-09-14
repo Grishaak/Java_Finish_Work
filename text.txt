@@ -1,0 +1,5 @@
+ничего не выпало.
+name: Мишка; id: 3; chance to drop: 6.0%
+name: БМВ; id: 1; chance to drop: 2.0%
+name: Лего; id: 2; chance to drop: 2.0%
+пусто.
