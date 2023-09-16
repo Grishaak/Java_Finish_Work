@@ -22,7 +22,6 @@ public abstract class Toy implements ToyInterface, Comparable<Toy> {
         this.name_toy = name_toy;
         this.id = id;
         this.weight = weight;
-        this.absoluteWeight = 0;
     }
 
     @Override
@@ -38,12 +37,6 @@ public abstract class Toy implements ToyInterface, Comparable<Toy> {
 
     @Override
     public int compareTo(Toy o) {
-        if (this.weight > o.weight) {
-            return -1;
-        } else if (this.weight == o.weight) {
-            return 0;
-        } else {
-            return 1;
-        }
+        return Double.compare(this.weight, o.weight);
     }
 }

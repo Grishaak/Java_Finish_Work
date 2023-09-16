@@ -46,7 +46,7 @@ public class VendingMachine implements Behavior {
 
     public String showAll() {
         StringBuilder sb = new StringBuilder();
-        for (Toy toy : priorityQueue) {
+        for (Toy toy : this.priorityQueue) {
             sb.append(toy.toString());
             sb.append("\n");
         }
